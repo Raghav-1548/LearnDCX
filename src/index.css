@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gemini-dark text-white;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-blue to-accent-purple;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gemini-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gemini-accent rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gemini-highlight;
+}
